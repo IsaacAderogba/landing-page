@@ -1,0 +1,160 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Sriracha');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* box sizing border box */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+:root {
+    font-size: 67.5%;
+}
+
+body{
+    font-family: "Nunito Sans", Helvetica, sans-serif;
+	font-weight: 300;
+	line-height: 1.65;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Sriracha', cursive;
+    font-weight: 600;
+}
+
+h1.landing-title {
+    font-size: 4.0rem;
+}
+
+button {
+    border: 0.2rem solid;
+    font-size: 1.6rem;
+    letter-spacing: 0.2rem;
+    margin: 0.8rem 0;
+    padding: 0.8rem 2.4rem;
+    text-align: center;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+}
+
+.primary-btn {
+    border-color: #fff;
+    color: #000
+}
+
+.primary-btn:hover {
+    background: #c1a581;
+    border-color: #c1a581;
+    color: #fff;
+}
+
+.secondary-btn:hover {
+    background: #c1a581;
+    color: #fff;
+    border-color: #fff;
+}
+
+.landing-page {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.landing-page .isaac {
+    color: white;
+    background: black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50%
+}
+
+.landing-page .impulse {
+    background: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+}
+
+.landing-page p {
+    font-size: 1.6rem;
+}
+
+@media(max-width: 800px) {
+    .landing-page {
+        flex-direction: column;
+    }
+
+    .landing-page .isaac {
+        height: 50%;
+        width: 100%
+    }
+    
+    .landing-page .impulse {
+        height: 50%;
+        width: 100%;
+    }
+}
+
